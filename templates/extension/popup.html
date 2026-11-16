@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="width: 300px; font-family: system-ui, sans-serif; padding: 12px;">
+  <h3>Example Companion</h3>
+  <p style="font-size: 12px; color: #444;">
+    Lets your browser open the public listing pages you search for on example-app.com and show the
+    results there. It runs only when you search. If a site shows a security check, the tab comes to
+    the front for you; the extension never answers it.
+  </p>
+  <button id="grant" style="width: 100%; padding: 8px;">Enable</button>
+  <p id="status" style="font-size: 12px;"></p>
+  <!-- MV3 forbids inline scripts in extension pages: the code lives in popup.js. -->
+  <script src="popup.js"></script>
+</body>
+</html>

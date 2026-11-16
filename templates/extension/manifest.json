@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Example Companion",
+  "version": "1.0.0",
+  "description": "Reads public listing pages in your own browser when you search on example-app.com. Never runs in the background; never answers a site's security check for you.",
+  "permissions": ["tabs", "scripting", "storage"],
+  "optional_host_permissions": ["https://listings.example-source.test/*"],
+  "background": { "service_worker": "background.js" },
+  "externally_connectable": {
+    "matches": ["https://example-app.com/*", "https://www.example-app.com/*"]
+  },
+  "action": { "default_popup": "popup.html" }
+}
